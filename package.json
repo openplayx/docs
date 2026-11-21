@@ -1,0 +1,34 @@
+{
+  "name": "openplayx-docs",
+  "version": "0.1.0",
+  "private": true,
+  "license": "MIT",
+  "engines": {
+    "node": ">=24 <25"
+  },
+  "scripts": {
+    "start": "docusaurus start",
+    "build": "npm run check:content && docusaurus build && node scripts/finalize.mjs && npm run check:build",
+    "check:content": "node scripts/check-content.mjs",
+    "check:build": "node scripts/check-build.mjs",
+    "typecheck": "tsc --noEmit",
+    "write-translations": "docusaurus write-translations"
+  },
+  "dependencies": {
+    "@docusaurus/core": "3.10.2",
+    "@docusaurus/preset-classic": "3.10.2",
+    "@easyops-cn/docusaurus-search-local": "0.55.3",
+    "@mdx-js/react": "3.1.1",
+    "clsx": "2.1.1",
+    "prism-react-renderer": "2.4.1",
+    "react": "19.2.0",
+    "react-dom": "19.2.0"
+  },
+  "devDependencies": {
+    "@docusaurus/module-type-aliases": "3.10.2",
+    "@docusaurus/tsconfig": "3.10.2",
+    "@docusaurus/types": "3.10.2",
+    "@types/react": "19.2.2",
+    "typescript": "5.9.3"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "sidebar.guide.category.Getting started": {
+    "message": "入门",
+    "description": "The label for category 'Getting started' in sidebar 'guide'"
+  },
+  "sidebar.guide.category.Media sources": {
+    "message": "媒体来源",
+    "description": "The label for category 'Media sources' in sidebar 'guide'"
+  },
+  "sidebar.guide.category.Library": {
+    "message": "媒体库",
+    "description": "The label for category 'Library' in sidebar 'guide'"
+  },
+  "sidebar.guide.category.AI": {
+    "message": "AI",
+    "description": "The label for category 'AI' in sidebar 'guide'"
+  },
+  "sidebar.guide.category.Remote access": {
+    "message": "远程访问",
+    "description": "The label for category 'Remote access' in sidebar 'guide'"
+  },
+  "sidebar.guide.category.Help": {
+    "message": "帮助",
+    "description": "The label for category 'Help' in sidebar 'guide'"
+  },
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  }
+}

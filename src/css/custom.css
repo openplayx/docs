@@ -1,0 +1,6 @@
+:root { --ifm-color-primary: #bd4d00; --ifm-color-primary-dark: #aa4500; --ifm-color-primary-darker: #a14100; --ifm-color-primary-darkest: #843600; --ifm-color-primary-light: #d05500; --ifm-color-primary-lighter: #d95800; --ifm-color-primary-lightest: #f46400; --ifm-font-family-base: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; --ifm-font-size-base: 100%; --ifm-heading-font-weight: 650; --ifm-code-font-size: 90%; }
+[data-theme='dark'] { --ifm-color-primary: #ff9b50; --ifm-color-primary-dark: #ff862b; --ifm-color-primary-darker: #ff7b18; --ifm-color-primary-darkest: #df5e00; --ifm-color-primary-light: #ffb075; --ifm-color-primary-lighter: #ffbb88; --ifm-color-primary-lightest: #ffdabf; --ifm-background-color: #121416; }
+.navbar__logo { height: 2rem; }
+.markdown { line-height: 1.8; }
+.markdown h1 { letter-spacing: -.025em; }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; transition-duration: .01ms !important; } }

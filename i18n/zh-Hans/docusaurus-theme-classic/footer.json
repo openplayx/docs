@@ -1,0 +1,18 @@
+{
+  "link.title.OpenPlayX": {
+    "message": "OpenPlayX",
+    "description": "The title of the footer links column with title=OpenPlayX in the footer"
+  },
+  "link.item.label.Contribute": {
+    "message": "参与贡献",
+    "description": "The label of footer link with label=Contribute linking to https://github.com/openplayx/docs/blob/main/CONTRIBUTING.md"
+  },
+  "link.item.label.Privacy": {
+    "message": "隐私说明",
+    "description": "The label of footer link with label=Privacy linking to https://openplayx.com/privacy/"
+  },
+  "copyright": {
+    "message": "Copyright © OpenPlayX contributors. MIT licensed.",
+    "description": "The footer copyright"
+  }
+}

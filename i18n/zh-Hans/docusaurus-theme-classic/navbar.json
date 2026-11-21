@@ -1,0 +1,26 @@
+{
+  "title": {
+    "message": "OpenPlayX Docs",
+    "description": "The title in the navbar"
+  },
+  "logo.alt": {
+    "message": "OpenPlayX",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.User guide": {
+    "message": "使用指南",
+    "description": "Navbar item with label User guide"
+  },
+  "item.label.Website": {
+    "message": "官网",
+    "description": "Navbar item with label Website"
+  },
+  "item.label.Download": {
+    "message": "下载",
+    "description": "Navbar item with label Download"
+  },
+  "item.label.GitHub": {
+    "message": "GitHub",
+    "description": "Navbar item with label GitHub"
+  }
+}
