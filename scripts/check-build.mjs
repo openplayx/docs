@@ -6,6 +6,7 @@ async function files(dir) { return (await Promise.all((await readdir(dir,{withFi
 let count=0;
 for (const path of await files(out)) if (path.endsWith('.html')) {
   const html = await readFile(path,'utf8');
+  assert.match(html, /<head><script src="\/docs\/js\/theme-preference\.js"><\/script>/, 'Website preference must load before Docusaurus bootstrap');
   assert(!html.includes('/docs/docs/'), path+': duplicated base URL');
   for (const [,attrs,body] of html.matchAll(/<script\b([^>]*)>([\s\S]*?)<\/script>/g)) {
     assert(!body.trim() || /type=["']application\/(?:ld\+)?json/.test(attrs), path+': executable inline script');

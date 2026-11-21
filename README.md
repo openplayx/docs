@@ -24,3 +24,9 @@ Production URLs are `/docs/` and `/docs/zh-Hans/`. `build/` is the root document
 First guides describe source-checked behavior, not real-account/device certification. Connector platform enrollment is explicitly marked as a development workflow. Review release coverage before removing that marker.
 
 See [CONTRIBUTING.md](CONTRIBUTING.md). Third-party dependencies keep their own licenses; the included logo/favicon are OpenPlayX project assets.
+
+The docs theme follows the marketing site's warm light/dark palette, typography
+and header treatment. The synchronous `static/js/theme-preference.js` bootstrap
+and the standard color-toggle wrapper share the website's `opx-theme` preference
+before first paint and when switching between pages/tabs. Keep Docusaurus's
+`theme` storage key unnamespaced unless both adapters are updated together.

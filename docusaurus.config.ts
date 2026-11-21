@@ -22,10 +22,10 @@ const config: Config = {
   clientModules: ['./src/clientModules/analytics.ts'],
   themeConfig: {
     colorMode: {respectPrefersColorScheme: true},
-    navbar: {title: 'OpenPlayX Docs', logo: {alt: 'OpenPlayX', src: 'img/logo.svg'}, items: [
+    navbar: {title: 'OpenPlayX', logo: {alt: 'OpenPlayX', src: 'img/logo.svg'}, items: [
       {type: 'docSidebar', sidebarId: 'guide', position: 'left', label: 'User guide'},
-      {href: 'https://openplayx.com/', label: 'Website', position: 'right'},
-      {href: 'https://openplayx.com/download/', label: 'Download', position: 'right'},
+      {href: 'https://openplayx.com/', label: 'Website', position: 'left'},
+      {href: 'https://openplayx.com/download/', label: 'Download', position: 'right', className: 'opx-download-link'},
       {href: 'https://github.com/openplayx/docs', label: 'GitHub', position: 'right'},
       {type: 'localeDropdown', position: 'right'},
     ]},

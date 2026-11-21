@@ -8,11 +8,12 @@
   },
   "scripts": {
     "start": "docusaurus start",
-    "build": "npm run check:content && docusaurus build && node scripts/finalize.mjs && npm run check:build",
+    "build": "npm run check:content && npm run test:theme && docusaurus build && node scripts/finalize.mjs && npm run check:build",
     "check:content": "node scripts/check-content.mjs",
     "check:build": "node scripts/check-build.mjs",
     "typecheck": "tsc --noEmit",
-    "write-translations": "docusaurus write-translations"
+    "write-translations": "docusaurus write-translations",
+    "test:theme": "node --test scripts/theme-preference.test.mjs"
   },
   "dependencies": {
     "@docusaurus/core": "3.10.2",

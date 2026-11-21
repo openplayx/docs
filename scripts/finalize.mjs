@@ -11,6 +11,7 @@ async function files(dir) {
 await mkdir(join(out,'assets/js'), {recursive:true});
 for (const file of await files(out)) if (file.endsWith('.html')) {
   let html = await readFile(file,'utf8');
+  if (!html.includes('src="/docs/js/theme-preference.js"')) html = html.replace('<head>', '<head><script src="/docs/js/theme-preference.js"></script>');
   const scripts = [...html.matchAll(/<script\b([^>]*)>([\s\S]*?)<\/script>/g)];
   for (const [tag, attrs, code] of scripts) {
     if (!code.trim() || /\bsrc=|type=["']application\/(?:ld\+)?json/.test(attrs)) continue;
