@@ -24,14 +24,14 @@ const config: Config = {
     colorMode: {respectPrefersColorScheme: true},
     navbar: {title: 'OpenPlayX', logo: {alt: 'OpenPlayX', src: 'img/logo.svg'}, items: [
       {type: 'docSidebar', sidebarId: 'guide', position: 'left', label: 'User guide'},
-      {href: 'https://openplayx.com/', label: 'Website', position: 'left'},
-      {href: 'https://openplayx.com/download/', label: 'Download', position: 'right', className: 'opx-download-link'},
+      {href: 'https://openplayx.com/', label: 'Website', position: 'left', target: '_self', className: 'opx-same-site-link'},
+      {href: 'https://openplayx.com/download/', label: 'Download', position: 'right', target: '_self', className: 'opx-download-link opx-same-site-link'},
       {href: 'https://github.com/openplayx/docs', label: 'GitHub', position: 'right'},
       {type: 'localeDropdown', position: 'right'},
     ]},
     footer: {style: 'dark', links: [{title: 'OpenPlayX', items: [
       {label: 'Contribute', href: 'https://github.com/openplayx/docs/blob/main/CONTRIBUTING.md'},
-      {label: 'Privacy', href: 'https://openplayx.com/privacy/'},
+      {label: 'Privacy', href: 'https://openplayx.com/privacy/', target: '_self', className: 'opx-same-site-link'},
     ]}], copyright: 'Copyright © OpenPlayX contributors. MIT licensed.'},
   } satisfies ThemeConfig,
 };

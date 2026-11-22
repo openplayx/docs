@@ -111,6 +111,8 @@ html[lang='zh-Hans'] .navbar__brand::after { content: '文档'; }
 .navbar__link { font-size: 14px; font-weight: 450; padding-inline: 14px; }
 .navbar__items--right { gap: 6px; }
 .navbar__link--active { color: var(--opx-text); }
+/* Website pages share the origin but live outside the docs router. */
+.opx-same-site-link > svg { display: none; }
 .navbar .opx-download-link { background: var(--opx-text); color: var(--opx-bg); border-radius: 6px; font-weight: 650; padding: 8px 14px; margin-inline: 8px; }
 .navbar .opx-download-link:hover { opacity: .85; }
 .navbar__search-input { background-color: var(--opx-panel-2); color: var(--opx-text); border: 1px solid var(--opx-line); border-radius: 7px; height: 36px; font-size: 14px; }
