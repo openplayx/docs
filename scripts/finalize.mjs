@@ -11,6 +11,12 @@ async function files(dir) {
 await mkdir(join(out,'assets/js'), {recursive:true});
 for (const file of await files(out)) if (file.endsWith('.html')) {
   let html = await readFile(file,'utf8');
+  if (relative(out, file).startsWith('zh-Hans/')) {
+    html = html
+      .replaceAll('href="https://openplayx.com/"', 'href="https://openplayx.com/zh/"')
+      .replaceAll('href="https://openplayx.com/download/"', 'href="https://openplayx.com/zh/download/"')
+      .replaceAll('href="https://openplayx.com/privacy/"', 'href="https://openplayx.com/zh/privacy/"');
+  }
   if (!html.includes('src="/docs/js/theme-preference.js"')) html = html.replace('<head>', '<head><script src="/docs/js/theme-preference.js"></script>');
   const scripts = [...html.matchAll(/<script\b([^>]*)>([\s\S]*?)<\/script>/g)];
   for (const [tag, attrs, code] of scripts) {

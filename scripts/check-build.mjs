@@ -30,7 +30,7 @@ for (const path of await files(out)) if (path.endsWith('.html')) {
   }
 }
 for (const prefix of ['', 'zh-Hans/']) {
-  for (const route of ['', 'sources/smb/', 'ai/models/', 'ai/mcp/', 'remote-access/connector/']) {
+  for (const route of ['', 'getting-started/tv/', 'playback/engines-and-pip/', 'playback/subtitles/', 'sources/smb/', 'sources/media-servers/', 'sources/cloud-drives/', 'ai/models/', 'ai/mcp/', 'remote-access/connector/']) {
     const html=await readFile(join(out,prefix,route,'index.html'),'utf8');
     assert(html.includes('rel="canonical"') && html.includes('hreflang='), 'SEO metadata');
   }

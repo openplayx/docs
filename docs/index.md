@@ -8,7 +8,10 @@ OpenPlayX plays local files, network storage and media servers, with an optional
 ## Choose a path
 
 - [Play your first video](getting-started/first-video.md): install a published build and open a file.
-- [Connect SMB storage](sources/smb.md): browse media on your NAS.
+- [Install on Android TV & Apple TV](getting-started/tv.md): set up OpenPlayX on a television.
+- [Playback engines & Picture-in-Picture](playback/engines-and-pip.md): understand `libmpv`/`libVLC` routing and PiP support.
+- [Subtitles: generation & alignment](playback/subtitles.md): generate subtitles with ASR and fix timing offsets.
+- [Connect SMB storage](sources/smb.md), [media servers & network protocols](sources/media-servers.md), or [cloud drives](sources/cloud-drives.md).
 - [Organize Home](library/home.md): scan a folder and review matches.
 - [Configure a model](ai/models.md) and [connect MCP tools](ai/mcp.md).
 - [Set up a Connector](remote-access/connector.md) for access away from home.
@@ -16,6 +19,8 @@ OpenPlayX plays local files, network storage and media servers, with an optional
 
 ## Availability
 
-Published installers cover Apple Silicon macOS and Android. Other platform source trees do not establish release or device support. These guides describe the current implementation, checked against public application and Connector source on **22 November 2026**. Newer development behavior is marked where release coverage has not been established. This documentation has not been validated with your accounts, NAS or device.
+Published builds on the [download page](https://openplayx.com/download/) cover **macOS** (Universal, Apple Silicon, Intel), **Windows** (x86_64), **Linux** (x86_64 AppImage), **Android**, **Android TV** and **Apple TV** (experimental tvOS IPA / TestFlight). iOS does not have a public installer download yet.
 
-Use the installation notes for the exact [release you download](https://github.com/openplayx/openplayx/releases). Local playback requires neither an AI subscription nor an OpenPlayX account. Online metadata, models and remote access have separate requirements.
+These guides describe the current implementation, checked against application and Connector source on **27 November 2026**. Newer development behavior is marked where release coverage has not been established. Always check the installation notes for the exact [release you download](https://github.com/openplayx/openplayx/releases).
+
+Local playback requires neither an AI subscription nor an OpenPlayX account. Online metadata, models, cloud adapters and remote access have separate requirements.

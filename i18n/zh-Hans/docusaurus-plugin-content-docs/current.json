@@ -3,6 +3,10 @@
     "message": "入门",
     "description": "The label for category 'Getting started' in sidebar 'guide'"
   },
+  "sidebar.guide.category.Playback": {
+    "message": "播放与字幕",
+    "description": "The label for category 'Playback' in sidebar 'guide'"
+  },
   "sidebar.guide.category.Media sources": {
     "message": "媒体来源",
     "description": "The label for category 'Media sources' in sidebar 'guide'"
