@@ -6,8 +6,8 @@ title: 播放引擎与画中画
 
 OpenPlayX 内置两套原生播放引擎并自动路由：
 
-- **`libmpv`（默认引擎）**：基于应用内置的 FFmpeg 9.1（`package-ffmpeg`），在受支持平台上优先使用。
-- **`libVLC`（自动回退）**：自动接管 Tracker 音频格式、暂未提供 `libmpv` 构建的平台（当前包括 Windows），以及 `libmpv` 无法打开的媒体文件。
+- **`libmpv`（默认引擎）**：基于应用内置的 FFmpeg 9.1（`package-ffmpeg`），在受支持平台上优先使用（涵盖模块音乐、游戏机音乐及桌面端光盘播放）。
+- **`libVLC`（自动回退）**：自动接管显式指定的扩展名（如 Musepack `.mpc`/`.mpp`/`.mp+`）、未打包 `libmpv` 的平台构建，以及 `libmpv` 无法打开的媒体文件。
 
 桌面端无需单独安装 VLC 或 mpv。
 

@@ -6,8 +6,8 @@ title: Playback engines & Picture-in-Picture
 
 OpenPlayX routes playback through two native engines:
 
-- **`libmpv` (default)**: Built on the app's bundled FFmpeg 9.1 (`package-ffmpeg`) and used by default on supported platforms.
-- **`libVLC` (automatic fallback)**: Automatically handles tracker modules, platforms without a `libmpv` build (including Windows for now) and any media that `libmpv` cannot open.
+- **`libmpv` (default)**: Built on the app's bundled FFmpeg 9.1 (`package-ffmpeg`) and used by default on supported platforms (including tracker modules, game console music, and desktop optical discs).
+- **`libVLC` (automatic fallback)**: Automatically handles explicit extension overrides (such as Musepack `.mpc`/`.mpp`/`.mp+`), platforms without a bundled `libmpv` build, and any media that `libmpv` cannot open.
 
 You do not need to install VLC or mpv separately on desktop.
 
